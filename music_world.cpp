@@ -479,7 +479,7 @@ void createDB() {
 		cerr << mysqlx_error_message(sess) << endl;
 		exit(mysqlx_error_num(sess));
 	}
-	query1 = { "INSERT INTO `instrument` VALUES (1,'PIANO','classic','Halilit'),(2,'GUITAR','classic','Kley Zemer'),(3,'Accordion','classic','Kley Zemer'),(4,'Acoustic bass guitar','bass','Kley Zemer'),(5,'Acoustic guitar','bass','Kley Zemer'),(6,'Alto saxophone','classic','Halilit'),(7,'Baritone horn','classic','Halilit'),(8,'Bass drum','bass','Halilit'),(9,'Bass guitar','bass','Halilit'),(10,'Cello','classic','Kley Zemer');" };
+	query1 = { "INSERT INTO `instrument` VALUES (1,'PIANO','classic','Halilit'),(2,'GUITAR','classic','Halilit'),(3,'Accordion','classic','Kley Zemer'),(4,'Acoustic bass guitar','bass','Kley Zemer'),(5,'Acoustic guitar','bass','Kley Zemer'),(6,'Alto saxophone','classic','Halilit'),(7,'Baritone horn','classic','Halilit'),(8,'Bass drum','bass','Halilit'),(9,'Bass guitar','bass','Halilit'),(10,'Cello','classic','Kley Zemer');" };
 	res = mysqlx_sql(sess, query1, MYSQLX_NULL_TERMINATED);
 	if (res == NULL) {
 		cerr << mysqlx_error_message(sess) << endl;
